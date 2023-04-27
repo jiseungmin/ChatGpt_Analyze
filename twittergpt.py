@@ -1,11 +1,11 @@
 import os
 import openai
 
-openai.api_key = "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"
+openai.api_key = " "
 messages = []
 
-for i in range(2):
-    user_content = input("User : ")
+for i in range(1):
+    user_content = "(그냥 오징어게임이나 극장에 상영해주세요…..)라는 문장의 감정을 한단어로 얘기해줘"
     messages.append({"role": "user", "content": f"{user_content}"})
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo", messages=messages)
